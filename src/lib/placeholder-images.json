@@ -1,0 +1,74 @@
+{
+  "hero": {
+    "imageUrl": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2047&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "hint": "coffee shop interior"
+  },
+  "aboutUs": {
+    "imageUrl": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2047&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "hint": "barista portrait"
+  },
+  "menuHeader": {
+    "all": "https://images.unsplash.com/photo-1497515114629-48446e82d164?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "coffee": "https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "special-coffee": "https://images.unsplash.com/photo-1542990253-a7814f4c5410?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "tea": "https://images.unsplash.com/photo-1576092762791-d2403a1e5356?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "bakery": "https://images.unsplash.com/photo-1583332029255-0f8d0b4e2b66?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "dessert": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  "espresso": {
+    "imageUrl": "https://images.unsplash.com/photo-1579992305324-343144f76279?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "hint": "espresso shot"
+  },
+  "cappuccino": {
+    "imageUrl": "https://images.unsplash.com/photo-1534778101362-1e9d722c37b1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "hint": "cappuccino art"
+  },
+  "latte": {
+    "imageUrl": "https://images.unsplash.com/photo-1561730452-4759a2246835?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "hint": "latte glass"
+  },
+  "americano": {
+    "imageUrl": "https://images.unsplash.com/photo-1545665225-b23b99e4d45e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "hint": "americano coffee"
+  },
+  "greenTea": {
+    "imageUrl": "https://images.unsplash.com/photo-1627893323065-37681146b8c8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "hint": "green tea"
+  },
+  "blackTea": {
+    "imageUrl": "https://images.unsplash.com/photo-1576092762791-d2403a1e5356?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "hint": "black tea"
+  },
+  "croissant": {
+    "imageUrl": "https://images.unsplash.com/photo-1530610476181-d83430b64dcd?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "hint": "fresh croissant"
+  },
+  "cheesecake": {
+    "imageUrl": "https://images.unsplash.com/photo-1535144131336-a60d69b35978?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "hint": "slice cheesecake"
+  },
+  "icedLatte": {
+    "imageUrl": "https://images.unsplash.com/photo-1507208355318-2d2c12ea030c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "hint": "iced latte"
+  },
+  "fruitTea": {
+    "imageUrl": "https://images.unsplash.com/photo-1549487962-0b186f86e587?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "hint": "fruit tea"
+  },
+  "brownie": {
+    "imageUrl": "https://images.unsplash.com/photo-1606313564200-e854261a8435?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "hint": "chocolate brownie"
+  },
+  "muffin": {
+    "imageUrl": "https://images.unsplash.com/photo-1576624234389-d93158c374d6?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "hint": "bakery muffin"
+  },
+  "coffeeBag1kg": {
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/firebase-studio-demos.appspot.com/o/user-assets%2F61655b3d-8153-4884-8848-0c681283e35a?alt=media&token=e937d37a-42c2-4665-8b3a-3c1e956e1876",
+    "hint": "coffee bag"
+  },
+  "coffeeBag200gr": {
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/firebase-studio-demos.appspot.com/o/user-assets%2F61655b3d-8153-4884-8848-0c681283e35a?alt=media&token=e937d37a-42c2-4665-8b3a-3c1e956e1876",
+    "hint": "coffee bag"
+  }
+}
