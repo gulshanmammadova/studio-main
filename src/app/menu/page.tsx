@@ -27,7 +27,8 @@ export default function MenuPage() {
     if (typeof price === 'object' && price !== null) {
       const definedPrices = Object.entries(price).filter(([, value]) => value !== 0 && value !== null);
       if (definedPrices.length === 1) {
-        return <>{(definedPrices[0][1] as number).toFixed(2)} AZN</>;
+        const [size, value] = definedPrices[0];
+        return <>{size.toUpperCase()}: {(value as number).toFixed(2)} AZN</>;
       }
       return (
         <span className="text-sm flex flex-wrap gap-x-2 justify-end">
@@ -52,10 +53,11 @@ export default function MenuPage() {
         <div className="text-center mb-12">
             <h1 className="text-5xl md:text-7xl font-headline text-primary">Menyumuz</h1>
         </div>
-        <div className="flex flex-col md:flex-row justify-between items-center mb-8 gap-4 sticky top-16 bg-background/90 py-4 z-40">
+  <div className="flex flex-col md:flex-row justify-between items-center mb-8 gap-4 md:sticky md:top-16 bg-background/90 py-4 z-40">
           <div className="w-full md:flex-grow">
             <div className="flex flex-wrap gap-2">
               <Button
+                type="button"
                 variant={activeCategory === 'all' ? 'default' : 'outline'}
                 onClick={() => setActiveCategory('all')}
                 className="flex-shrink-0"
@@ -65,6 +67,7 @@ export default function MenuPage() {
               {menuCategories.map((category) => (
                 <Button
                   key={category.id}
+                  type="button"
                   variant={activeCategory === category.id ? 'default' : 'outline'}
                   onClick={() => setActiveCategory(category.id)}
                   className="flex-shrink-0"
@@ -110,7 +113,7 @@ export default function MenuPage() {
                   <div key={item.id} className="flex items-baseline">
                     <span className="font-headline text-foreground text-lg">{item.name}</span>
                     <span className="menu-item-line"></span>
-                    <span className="font-bold text-foreground text-lg whitespace-nowrap">{getPriceDisplay(item.price)}</span>
+                    <span className="font-bold text-foreground text-[13px] md:text-lg whitespace-nowrap">{getPriceDisplay(item.price)}</span>
                   </div>
                 ))}
               </div>
@@ -123,7 +126,7 @@ export default function MenuPage() {
                 <div key={item.id} className="flex items-baseline">
                   <span className="font-headline text-foreground text-lg">{item.name}</span>
                   <span className="menu-item-line"></span>
-                  <span className="font-bold text-foreground text-lg whitespace-nowrap">{getPriceDisplay(item.price)}</span>
+                   <span className="font-bold text-foreground text-[13px] md:text-lg whitespace-nowrap">{getPriceDisplay(item.price)}</span>
                 </div>
               ))
             ) : (

@@ -25,20 +25,20 @@ export const menuCategories = [
 
 export const menuItems: MenuItem[] = [
   // Hot Coffee
-  { id: 1, name: 'Espresso', price: 3.00, category: 'hot-coffee', description: '', image: 'espresso' },
-  { id: 2, name: 'Double espresso', price: 3.50, category: 'hot-coffee', description: '', image: 'espresso' },
-  { id: 3, name: 'Lungo', price: 3.50, category: 'hot-coffee', description: '', image: 'americano' },
-  { id: 4, name: 'Americano', price: { S: 0, M: 5.00, L: 5.50 }, category: 'hot-coffee', description: '', image: 'americano' },
-  { id: 5, name: 'Esp. machiato', price: 5.00, category: 'hot-coffee', description: '', image: 'cappuccino' },
-  { id: 6, name: 'Matcha latte', price: { S: 0, M: 9.00, L: 0 }, category: 'hot-coffee', description: '', image: 'latte' },
-  { id: 7, name: 'Cappuccino', price: { S: 0, M: 6.00, L: 6.50 }, category: 'hot-coffee', description: '', image: 'cappuccino' },
-  { id: 8, name: 'Flat white', price: 5.00, category: 'hot-coffee', description: '', image: 'latte' },
-  { id: 9, name: 'Cortado', price: 5.00, category: 'hot-coffee', description: '', image: 'latte' },
+  { id: 1, name: 'Espresso', price: { S: 3.00, M: 0, L: 0 }, category: 'hot-coffee', description: '', image: 'espresso' },
+  { id: 2, name: 'Double espresso', price:{ S: 3.50, M: 0, L: 0 }, category: 'hot-coffee', description: '', image: 'espresso' },
+  { id: 3, name: 'Lungo', price: { S: 3.50, M: 0, L: 0 }, category: 'hot-coffee', description: '', image: 'americano' },
+  { id: 4, name: 'Americano', price: { S: 4.00, M: 5.00, L: 5.50 }, category: 'hot-coffee', description: '', image: 'americano' },
+  { id: 5, name: 'Esp. machiato', price:{ S: 5.00, M: 0, L: 0 }, category: 'hot-coffee', description: '', image: 'cappuccino' },
+  { id: 6, name: 'Matcha latte', price: { S: 8.00, M: 9.00, L: 0 }, category: 'hot-coffee', description: '', image: 'latte' },
+  { id: 7, name: 'Cappuccino', price: { S: 5.00, M: 6.00, L: 6.50 }, category: 'hot-coffee', description: '', image: 'cappuccino' },
+  { id: 8, name: 'Flat white', price: { S: 5.00, M: 0, L: 0 }, category: 'hot-coffee', description: '', image: 'latte' },
+  { id: 9, name: 'Cortado', price: { S: 5.00, M: 0, L: 0 }, category: 'hot-coffee', description: '', image: 'latte' },
   { id: 10, name: 'Raf', price: { S: 0, M: 6.00, L: 0 }, category: 'hot-coffee', description: '', image: 'latte' },
   { id: 11, name: 'Mocha', price: { S: 0, M: 6.50, L: 0 }, category: 'hot-coffee', description: '', image: 'latte' },
-  { id: 12, name: 'Spanish latte', price: 6.00, category: 'hot-coffee', description: '', image: 'latte' },
-  { id: 13, name: 'V 60', price: 7.00, category: 'hot-coffee', description: '', image: 'americano' },
-  { id: 14, name: 'Chemex', price: 7.00, category: 'hot-coffee', description: '', image: 'americano' },
+  { id: 12, name: 'Spanish latte', price: { S: 0, M: 6.00, L: 0 }, category: 'hot-coffee', description: '', image: 'latte' },
+  { id: 13, name: 'V 60', price: { S: 0, M: 7.00, L: 0 }, category: 'hot-coffee', description: '', image: 'americano' },
+  { id: 14, name: 'Chemex', price: { S: 0, M: 7.00, L: 0 }, category: 'hot-coffee', description: '', image: 'americano' },
 
   // Special Hot Coffee
   { id: 15, name: 'Cherry mocha', price: 7.0, category: 'special-hot-coffee', description: '', image: 'latte' },

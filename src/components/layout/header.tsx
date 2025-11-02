@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, Moon, Sun } from 'lucide-react';
@@ -39,6 +39,8 @@ export default function Header() {
   const reservationNumber = '+994773080882';
   const reservationTel = `tel:${reservationNumber}`;
 
+  const [navigating, setNavigating] = useState(false);
+
   const NavLink = ({ href, label }: { href: string; label: string }) => (
     <Link
       href={href}
@@ -46,11 +48,19 @@ export default function Header() {
         "text-lg md:text-sm font-medium transition-colors hover:text-primary",
         pathname === href ? "text-primary" : "text-muted-foreground"
       )}
-      onClick={() => setMenuOpen(false)}
+      onClick={() => {
+        setMenuOpen(false);
+        setNavigating(true);
+      }}
     >
       {label}
     </Link>
   );
+
+  useEffect(() => {
+    // clear navigating state after the pathname changes
+    setNavigating(false);
+  }, [pathname]);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -65,8 +75,11 @@ export default function Header() {
             <a href={reservationTel} className="text-sm font-medium">Rezervasiya</a>
           </Button>
         </nav>
-        <div className="flex items-center gap-2">
-           <ModeToggle />
+      <div className="flex items-center gap-2">
+        <ModeToggle />
+           {navigating && (
+             <span className="ml-2 inline-block h-4 w-4 border-2 border-primary border-t-transparent rounded-full animate-spin" aria-hidden></span>
+           )}
            <div className="md:hidden">
             <Sheet open={isMenuOpen} onOpenChange={setMenuOpen}>
               <SheetTrigger asChild>

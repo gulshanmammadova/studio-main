@@ -97,6 +97,14 @@ export default function ShopPage() {
                     Səbəti boşalt
                   </Button>
                   <div className="flex-grow overflow-y-auto pr-4">
+                         <div className="border-t pt-4 mt-auto">
+                    <div className="flex justify-between font-bold text-lg">
+                      <span>Cəmi:</span>
+                      <span>{cartTotal.toFixed(2)} AZN</span>
+                    </div>
+                  </div>
+                  <hr className="my-4" />
+      
                     {cart.map(item => (
                       <div key={item.id} className="flex items-center gap-4 mb-4">
                         <Image
@@ -133,12 +141,7 @@ export default function ShopPage() {
                       </div>
                     ))}
                   </div>
-                  <div className="border-t pt-4 mt-auto">
-                    <div className="flex justify-between font-bold text-lg">
-                      <span>Cəmi:</span>
-                      <span>{cartTotal.toFixed(2)} AZN</span>
-                    </div>
-                  </div>
+             
                 </>
               )}
             </div>

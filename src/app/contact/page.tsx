@@ -54,15 +54,22 @@ Seyid Əzim Şirvani küc, giriş 51</p>
 
         <Card className="h-full min-h-[400px] md:min-h-0">
           <CardContent className="p-0 h-full rounded-lg overflow-hidden">
-            <iframe
-              src=""
+            {/* <iframe
+              src="https://maps.app.goo.gl/2DVHHBL2MLkFYuADAhttps://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.373924703364!2d49.9572679!3d40.3927287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40306300534014b3%3A0x5e6663b1f1510950!2sCOFFEETEAM!5e1!3m2!1sen!2saz!4v1762092856835!5m2!1sen!2saz"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen={false}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+            ></iframe> */}
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.373924703364!2d49.9572679!3d40.3927287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40306300534014b3%3A0x5e6663b1f1510950!2sCOFFEETEAM!5e1!3m2!1sen!2saz!4v1762092856835!5m2!1sen!2saz" 
+           width="100%"
+              height="100%"
+              style={{ border: 0 }}
+             allowFullScreen={false}
+             loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade"></iframe>
           </CardContent>
         </Card>
       </div>
