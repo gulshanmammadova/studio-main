@@ -48,7 +48,7 @@ let galeryImages=[qalerya1,qalerya2,qalerya3,qalerya4];
                 <h2 className="text-4xl md:text-5xl font-headline text-primary">Niyə COFFEETEAM?</h2>
             </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-lg">
+            <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-lg w-full max-w-md mx-auto md:mx-0">
                 {/* <Image
                     src={placeholderImages.aboutUs.imageUrl}
                     alt="Barista"
@@ -56,12 +56,12 @@ let galeryImages=[qalerya1,qalerya2,qalerya3,qalerya4];
                     className="object-cover"
                     data-ai-hint={placeholderImages.aboutUs.hint}
                 /> */}
-                 <Image
-                    src={BaristaImg}
-                    alt="Barista"
-                    fill
-                    className="object-cover"
-                     />
+            <Image
+              src={BaristaImg}
+              alt="Barista"
+              fill
+              className="object-cover"
+              />
             </div>
             <div>
               <p className="text-lg text-muted-foreground">

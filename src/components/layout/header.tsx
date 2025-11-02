@@ -35,6 +35,9 @@ export function ModeToggle() {
 export default function Header() {
   const pathname = usePathname();
   const [isMenuOpen, setMenuOpen] = useState(false);
+  // Reservation phone number (from contact page)
+  const reservationNumber = '+994773080882';
+  const reservationTel = `tel:${reservationNumber}`;
 
   const NavLink = ({ href, label }: { href: string; label: string }) => (
     <Link
@@ -57,6 +60,10 @@ export default function Header() {
           {navLinks.map(link => (
             <NavLink key={link.href} {...link} />
           ))}
+          {/* Rezervasiya button - dials the contact number */}
+          <Button asChild size="sm" className="ml-2">
+            <a href={reservationTel} className="text-sm font-medium">Rezervasiya</a>
+          </Button>
         </nav>
         <div className="flex items-center gap-2">
            <ModeToggle />
@@ -78,6 +85,11 @@ export default function Header() {
                     {navLinks.map(link => (
                       <NavLink key={link.href} {...link} />
                     ))}
+                    <div className="pt-4">
+                      <Button asChild className="w-full">
+                        <a href={reservationTel}>Rezervasiya üçün Zəng et</a>
+                      </Button>
+                    </div>
                   </nav>
                 </div>
               </SheetContent>
