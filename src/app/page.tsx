@@ -5,29 +5,39 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import placeholderImages from '@/lib/placeholder-images.json';
 // import { galleryImages } from '@/lib/data';
-import MyVideo from '../assets/home/video/vecteezy_coffee-beans-coffee-flying-brown_19080887_980.mp4';
+// import MyVideo from '../assets/home/video/vecteezy_coffee-beans-coffee-flying-brown_19080887_980.mp4';
 import BaristaImg from '../assets/home/qalerya/qalerya-1 (1).png';
-import { ArrowRight, Coffee, Award, Smile } from 'lucide-react';
+import { ArrowRight, Coffee, Award, Smile, Video } from 'lucide-react';
 import qalerya1 from '../assets/home/qalerya/barista-1.png';
 import qalerya2 from '../assets/home/qalerya/qalerya-1 (1).png';
 import qalerya3 from '../assets/home/qalerya/qalerya-2.png';
 import qalerya4 from '../assets/home/qalerya/qalerya-3.png'
+import bgImg from '../assets/home/qalerya/bg.jpg'
+import { useEffect, useRef } from "react";
 import { babelIncludeRegexes } from 'next/dist/build/webpack-config';
 export default function Home() {
 let galeryImages=[qalerya1,qalerya2,qalerya3,qalerya4];
+ const videoRef = useRef<HTMLVideoElement>(null);
+  useEffect(() => {
+    videoRef.current?.play().catch(() => {
+      console.log("Autoplay blocked, user interaction needed");
+    });
+  }, []);
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-center text-white overflow-hidden">
-        <video
-          src="/assets/home/video/vecteezy_coffee-beans-coffee-flying-brown_19080887_980.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute top-1/2 left-1/2 w-full h-full min-w-full min-h-full object-cover transform -translate-x-1/2 -translate-y-1/2 z-0"
-        />
-        <div className="absolute inset-0 bg-black/60" />
+      <video
+      ref={videoRef}
+      muted
+      autoPlay
+      loop
+      playsInline
+      className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+    >
+      <source src="/assets/home/video/slider-video-1.mp4" type="video/mp4" />
+    </video>
+   <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 px-4">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-headline tracking-tight">
             Dadlı Anların Məkanı
