@@ -36,8 +36,9 @@ let galeryImages=[qalerya1,qalerya2,qalerya3,qalerya4];
       className="absolute top-0 left-0 w-full h-full object-cover -z-10">
       <source src="/assets/home/video/slider-video-1.mp4" type="video/mp4" />
     </video>
-   <div className="absolute inset-0 bg-black/60" />
-        <div className="relative z-10 px-4">
+     <div className="absolute inset-0 bg-black/60" />
+       {/* Hero başlıq bölməsi */}
+       <div className="relative z-10 px-4">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-headline tracking-tight">
             Dadlı Anların Məkanı
           </h1>
