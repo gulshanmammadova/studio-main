@@ -3,6 +3,7 @@ import { Inter, Noto_Serif_Display } from 'next/font/google';
 import './globals.css';
 import { cn } from '@/lib/utils';
 import { ThemeProvider } from '@/components/theme-provider';
+import Snow from '@/components/snow';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
@@ -32,6 +33,7 @@ export default function RootLayout({
     <html lang="az" className={cn(inter.variable, notoSerifDisplay.variable)} suppressHydrationWarning>
       <body className="bg-background text-foreground">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+           <Snow />
            <div className="flex flex-col min-h-screen">
               <Header />
               <main className="flex-grow">{children}</main>
